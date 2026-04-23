@@ -43,6 +43,12 @@ export const Route = createRootRoute({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Madetoys — Brincar que desenvolve" },
+      { name: "description", content: "Madetoys: Brincar que desenvolve é uma landing page que apresenta brinquedos pedagógicos artesanais." },
+      { property: "og:description", content: "Madetoys: Brincar que desenvolve é uma landing page que apresenta brinquedos pedagógicos artesanais." },
+      { name: "twitter:description", content: "Madetoys: Brincar que desenvolve é uma landing page que apresenta brinquedos pedagógicos artesanais." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/FJFzwCyNeTVim9GkBdTy2XnyQ6H3/social-images/social-1776968380527-ChatGPT_Image_Apr_23,_2026,_02_15_45_PM.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/FJFzwCyNeTVim9GkBdTy2XnyQ6H3/social-images/social-1776968380527-ChatGPT_Image_Apr_23,_2026,_02_15_45_PM.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -50,7 +56,7 @@ export const Route = createRootRoute({
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Caprasimo&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Nunito:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Nunito:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap",
       },
     ],
   }),
