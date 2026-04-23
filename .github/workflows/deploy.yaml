@@ -38,14 +38,21 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build
+        env:
+          # Domínio customizado (ex.: www.madetoys.com.br) = site na raiz → use "/".
+          # Só use subpath se publicar em https://<user>.github.io/<repo>/ (defina a variável
+          # de repositório VITE_BASE_PATH, ex.: /madetoys-brincar-que-desenvolve/).
+          VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH != '' && vars.VITE_BASE_PATH || '/' }}
         run: npm run build
+      - name: SPA fallback (404 → index)
+        run: cp dist/client/index.html dist/client/404.html
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload dist folder
-          path: './dist'
+          # Apenas o bundle estático + index.html gerados pelo prerender
+          path: './dist/client'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
