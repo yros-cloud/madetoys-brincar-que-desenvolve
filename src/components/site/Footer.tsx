@@ -45,7 +45,8 @@ export function Footer() {
             </li>
             <li>
               <a href="mailto:contato@madetoys.com.br" className="inline-flex items-center gap-2 text-muted-foreground transition-colors hover:text-primary">
-                <Mail className="h-4 w-4" /> contato@madetoys.com.br
+                <Mail className="h-4 w-4" />
+                <span>contato@madetoys.com.br</span>
               </a>
             </li>
           </ul>
