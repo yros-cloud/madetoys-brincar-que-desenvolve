@@ -6,4 +6,31 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-export default defineConfig();
+// https://vitejs.dev/config/
+export default defineConfig(({ mode }) => ({
+    server: {
+      host: "::",
+      port: 8080,
+    },
+    build: {
+      outDir: "dist",
+      rollupOptions: {
+        output: {
+          // Put all JS and CSS in the same directory
+          entryFileNames: '[name].js',
+          chunkFileNames: '[name].js',
+          assetFileNames: '[name].[ext]'
+        }
+      }
+    },
+    plugins: [
+      react(),
+      mode === 'development' &&
+      componentTagger(),
+    ].filter(Boolean),
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "./src"),
+      },
+    },
+  }));
