@@ -31,8 +31,10 @@ export function Header() {
         <a href="#top" className="flex items-center gap-2">
           <img src={logo} alt="Madetoys" className="h-12 w-12 rounded-full object-cover sm:h-14 sm:w-14" />
           <div className="leading-tight">
-            <p className="font-display text-xl font-semibold text-primary sm:text-2xl">Madetoys</p>
-            <p className="font-script text-sm text-[var(--sage-deep)] sm:text-base">brincar que desenvolve</p>
+            <p className="font-brand text-xl sm:text-2xl">
+              <span className="text-[var(--brown)]">Made</span><span className="text-[var(--sage-deep)]">toys</span>
+            </p>
+            <p className="font-script text-sm text-[var(--brown-soft)] sm:text-base">brincar que desenvolve</p>
           </div>
         </a>
 
