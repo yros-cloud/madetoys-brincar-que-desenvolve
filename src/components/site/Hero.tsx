@@ -36,9 +36,9 @@ export function Hero() {
             Recursos pedagógicos artesanais
           </span>
 
-          <h1 className="mt-6 font-display text-5xl leading-[1.05] text-primary text-balance sm:text-6xl lg:text-7xl">
-            Madetoys
-            <span className="block font-script text-3xl font-normal text-[var(--sage-deep)] sm:text-4xl lg:text-5xl">
+          <h1 className="mt-6 font-brand text-6xl leading-[1] text-balance sm:text-7xl lg:text-8xl">
+            <span className="text-[var(--brown)]">Made</span><span className="text-[var(--sage-deep)]">toys</span>
+            <span className="mt-3 block font-script text-3xl font-normal text-[var(--brown-soft)] sm:text-4xl lg:text-5xl">
               brincar que desenvolve
             </span>
           </h1>

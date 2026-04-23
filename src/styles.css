@@ -51,6 +51,7 @@
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Nunito", system-ui, sans-serif;
   --font-script: "Caveat", cursive;
+  --font-brand: "Caprasimo", "Fraunces", Georgia, serif;
 
   --shadow-soft: 0 8px 30px -12px color-mix(in oklab, var(--brown) 18%, transparent);
   --shadow-card: 0 12px 40px -18px color-mix(in oklab, var(--brown) 25%, transparent);
@@ -147,6 +148,7 @@
   .font-display { font-family: var(--font-display); }
   .font-script { font-family: var(--font-script); }
   .font-body { font-family: var(--font-body); }
+  .font-brand { font-family: var(--font-brand); letter-spacing: -0.02em; }
 
   .text-balance { text-wrap: balance; }
   .text-pretty { text-wrap: pretty; }
